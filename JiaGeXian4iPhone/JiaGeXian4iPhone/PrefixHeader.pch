@@ -1,0 +1,17 @@
+//
+//  PrefixHeader.pch
+//  JiaGeXian4iPhone
+//
+//  Created by lxm on 2017/11/30.
+//  Copyright © 2017年 lxm. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <Foundation/Foundation.h>
+#define ARC_ENABLED
+
+#endif /* PrefixHeader_pch */

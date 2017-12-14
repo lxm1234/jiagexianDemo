@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyDatePickerViewController" customModule="PopupControl" customModuleProvider="target">
+            <connections>
+                <outlet property="datePickerView" destination="AOo-xB-2gm" id="9rx-E6-CAb"/>
+                <outlet property="view" destination="zdu-x1-7YA" id="7bz-4g-XR8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="zdu-x1-7YA">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="206"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Rh-ck-vXZ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                </navigationBar>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jaE-pg-VLj">
+                    <rect key="frame" x="20" y="7" width="48" height="30"/>
+                    <state key="normal" title="Cancel"/>
+                    <connections>
+                        <action selector="cancel:" destination="-1" eventType="touchUpInside" id="HNi-BJ-reC"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIy-rF-0wQ">
+                    <rect key="frame" x="318" y="7" width="37" height="30"/>
+                    <state key="normal" title="Done"/>
+                    <connections>
+                        <action selector="done:" destination="-1" eventType="touchUpInside" id="qRn-rz-W4y"/>
+                    </connections>
+                </button>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="AOo-xB-2gm">
+                    <rect key="frame" x="0.0" y="44" width="375" height="162"/>
+                    <date key="date" timeIntervalSinceReferenceDate="533723370.47228402">
+                        <!--2017-11-30 08:29:30 +0000-->
+                    </date>
+                </datePicker>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="jaE-pg-VLj" firstAttribute="top" secondItem="2oy-w1-fPw" secondAttribute="top" constant="7" id="19M-O3-QiC"/>
+                <constraint firstItem="AOo-xB-2gm" firstAttribute="bottom" secondItem="2oy-w1-fPw" secondAttribute="bottom" id="EFc-k2-LYj"/>
+                <constraint firstItem="5Rh-ck-vXZ" firstAttribute="leading" secondItem="2oy-w1-fPw" secondAttribute="leading" id="ID1-3e-AI6"/>
+                <constraint firstItem="5Rh-ck-vXZ" firstAttribute="trailing" secondItem="2oy-w1-fPw" secondAttribute="trailing" id="LFc-fH-k6i"/>
+                <constraint firstItem="AOo-xB-2gm" firstAttribute="leading" secondItem="2oy-w1-fPw" secondAttribute="leading" id="LZL-oM-wPT"/>
+                <constraint firstItem="AOo-xB-2gm" firstAttribute="top" secondItem="5Rh-ck-vXZ" secondAttribute="bottom" id="Nc2-jY-04h"/>
+                <constraint firstItem="AOo-xB-2gm" firstAttribute="top" secondItem="jaE-pg-VLj" secondAttribute="bottom" constant="7" id="NrR-WP-cD9"/>
+                <constraint firstItem="2oy-w1-fPw" firstAttribute="trailing" secondItem="HIy-rF-0wQ" secondAttribute="trailing" constant="20" id="izg-rq-aiW"/>
+                <constraint firstItem="AOo-xB-2gm" firstAttribute="top" secondItem="HIy-rF-0wQ" secondAttribute="bottom" constant="7" id="juB-S9-Q2q"/>
+                <constraint firstItem="HIy-rF-0wQ" firstAttribute="top" secondItem="2oy-w1-fPw" secondAttribute="top" constant="7" id="pHX-bf-K25"/>
+                <constraint firstItem="jaE-pg-VLj" firstAttribute="leading" secondItem="2oy-w1-fPw" secondAttribute="leading" constant="20" id="uDl-G3-cOs"/>
+                <constraint firstItem="5Rh-ck-vXZ" firstAttribute="top" secondItem="2oy-w1-fPw" secondAttribute="top" id="xLL-dg-Om4"/>
+                <constraint firstItem="AOo-xB-2gm" firstAttribute="trailing" secondItem="2oy-w1-fPw" secondAttribute="trailing" id="yUi-mZ-x3B"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="2oy-w1-fPw"/>
+            <point key="canvasLocation" x="34.5" y="-176"/>
+        </view>
+    </objects>
+</document>

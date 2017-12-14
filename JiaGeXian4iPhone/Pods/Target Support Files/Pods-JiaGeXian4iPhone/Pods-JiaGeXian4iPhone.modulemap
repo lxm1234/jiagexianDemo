@@ -1,0 +1,6 @@
+framework module Pods_JiaGeXian4iPhone {
+  umbrella header "Pods-JiaGeXian4iPhone-umbrella.h"
+
+  export *
+  module * { export * }
+}

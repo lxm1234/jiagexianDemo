@@ -1,0 +1,798 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C85CBA92F086721A13BDC6B4 /* Pods_JiaGeXian4iPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69F409D25748DBAD461AFCF /* Pods_JiaGeXian4iPhone.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		D93DFF4B1FE2CC5B00E48903 /* PopupControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9883BB11FD029B7001F84F9 /* PopupControl.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		D93DFF4C1FE2CD7800E48903 /* PopupControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9883BB11FD029B7001F84F9 /* PopupControl.framework */; };
+		D93DFF4D1FE2CD7800E48903 /* PopupControl.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D9883BB11FD029B7001F84F9 /* PopupControl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D97F43AA1FD8EC37007F019E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = D97F43A91FD8EC37007F019E /* Podfile */; };
+		D97F43B41FD905AB007F019E /* TBXML+Compression.m in Sources */ = {isa = PBXBuildFile; fileRef = D97F43AD1FD905AB007F019E /* TBXML+Compression.m */; };
+		D97F43B51FD905AB007F019E /* TBXML+HTTP.m in Sources */ = {isa = PBXBuildFile; fileRef = D97F43AE1FD905AB007F019E /* TBXML+HTTP.m */; };
+		D97F43B61FD905AB007F019E /* TBXML.m in Sources */ = {isa = PBXBuildFile; fileRef = D97F43AF1FD905AB007F019E /* TBXML.m */; };
+		D97F43B91FD91270007F019E /* HotelListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97F43B81FD91270007F019E /* HotelListViewController.swift */; };
+		D97F43BB1FD93044007F019E /* HotelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97F43BA1FD93044007F019E /* HotelTableViewCell.swift */; };
+		D97F43BD1FD93554007F019E /* myIndex.html in Resources */ = {isa = PBXBuildFile; fileRef = D97F43BC1FD93554007F019E /* myIndex.html */; };
+		D97F43C11FD94869007F019E /* RoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97F43C01FD94869007F019E /* RoomTableViewCell.swift */; };
+		D97F43C31FD9488F007F019E /* RoomListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97F43C21FD9488F007F019E /* RoomListViewController.swift */; };
+		D9883B721FD025B5001F84F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9883B711FD025B5001F84F9 /* AppDelegate.swift */; };
+		D9883B771FD025B5001F84F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9883B751FD025B5001F84F9 /* Main.storyboard */; };
+		D9883B791FD025B5001F84F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9883B781FD025B5001F84F9 /* Assets.xcassets */; };
+		D9883B7C1FD025B5001F84F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9883B7A1FD025B5001F84F9 /* LaunchScreen.storyboard */; };
+		D9883B871FD025B5001F84F9 /* JiaGeXian4iPhoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9883B861FD025B5001F84F9 /* JiaGeXian4iPhoneTests.swift */; };
+		D9883B921FD025B5001F84F9 /* JiaGeXian4iPhoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9883B911FD025B5001F84F9 /* JiaGeXian4iPhoneUITests.swift */; };
+		D9883BBA1FD02E29001F84F9 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D9883BB91FD02E29001F84F9 /* libz.tbd */; settings = {ATTRIBUTES = (Required, ); }; };
+		D9883C0F1FD03414001F84F9 /* HotelBL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9883C0E1FD03414001F84F9 /* HotelBL.swift */; };
+		D9883C111FD03AE6001F84F9 /* DispatchQueueExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9883C101FD03AE6001F84F9 /* DispatchQueueExtension.swift */; };
+		D9D877011FD7F6BA0078096E /* RoomBL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D877001FD7F6BA0078096E /* RoomBL.swift */; };
+		D9D877031FD7FD200078096E /* BLHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D877021FD7FD200078096E /* BLHelp.swift */; };
+		D9D877061FD814E20078096E /* CitiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D877041FD814E20078096E /* CitiesTableViewController.swift */; };
+		D9D877091FD816730078096E /* cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = D9D877081FD816730078096E /* cities.plist */; };
+		D9D8770B1FD825710078096E /* KeyViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D8770A1FD825710078096E /* KeyViewViewController.swift */; };
+		D9D8770D1FD82BD60078096E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D8770C1FD82BD60078096E /* ViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D9883B831FD025B5001F84F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9883B661FD025B5001F84F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9883B6D1FD025B5001F84F9;
+			remoteInfo = JiaGeXian4iPhone;
+		};
+		D9883B8E1FD025B5001F84F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9883B661FD025B5001F84F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9883B6D1FD025B5001F84F9;
+			remoteInfo = JiaGeXian4iPhone;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D93DFF4E1FE2CD7800E48903 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D93DFF4D1FE2CD7800E48903 /* PopupControl.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		51B2D6B3F6F803BA6AF6467B /* Pods-JiaGeXian4iPhone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JiaGeXian4iPhone.release.xcconfig"; path = "Pods/Target Support Files/Pods-JiaGeXian4iPhone/Pods-JiaGeXian4iPhone.release.xcconfig"; sourceTree = "<group>"; };
+		C334A0829C6E7E3AD570FF28 /* Pods-JiaGeXian4iPhone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JiaGeXian4iPhone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JiaGeXian4iPhone/Pods-JiaGeXian4iPhone.debug.xcconfig"; sourceTree = "<group>"; };
+		D97F43A91FD8EC37007F019E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D97F43AD1FD905AB007F019E /* TBXML+Compression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TBXML+Compression.m"; sourceTree = "<group>"; };
+		D97F43AE1FD905AB007F019E /* TBXML+HTTP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TBXML+HTTP.m"; sourceTree = "<group>"; };
+		D97F43AF1FD905AB007F019E /* TBXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBXML.m; sourceTree = "<group>"; };
+		D97F43B11FD905AB007F019E /* TBXML+Compression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TBXML+Compression.h"; sourceTree = "<group>"; };
+		D97F43B21FD905AB007F019E /* TBXML+HTTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TBXML+HTTP.h"; sourceTree = "<group>"; };
+		D97F43B31FD905AB007F019E /* TBXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBXML.h; sourceTree = "<group>"; };
+		D97F43B71FD9067C007F019E /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		D97F43B81FD91270007F019E /* HotelListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelListViewController.swift; sourceTree = "<group>"; };
+		D97F43BA1FD93044007F019E /* HotelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelTableViewCell.swift; sourceTree = "<group>"; };
+		D97F43BC1FD93554007F019E /* myIndex.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = myIndex.html; sourceTree = "<group>"; };
+		D97F43C01FD94869007F019E /* RoomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomTableViewCell.swift; sourceTree = "<group>"; };
+		D97F43C21FD9488F007F019E /* RoomListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListViewController.swift; sourceTree = "<group>"; };
+		D9883B6E1FD025B5001F84F9 /* JiaGeXian4iPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JiaGeXian4iPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9883B711FD025B5001F84F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D9883B761FD025B5001F84F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D9883B781FD025B5001F84F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D9883B7B1FD025B5001F84F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D9883B7D1FD025B5001F84F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9883B821FD025B5001F84F9 /* JiaGeXian4iPhoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JiaGeXian4iPhoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9883B861FD025B5001F84F9 /* JiaGeXian4iPhoneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JiaGeXian4iPhoneTests.swift; sourceTree = "<group>"; };
+		D9883B881FD025B5001F84F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9883B8D1FD025B5001F84F9 /* JiaGeXian4iPhoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JiaGeXian4iPhoneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9883B911FD025B5001F84F9 /* JiaGeXian4iPhoneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JiaGeXian4iPhoneUITests.swift; sourceTree = "<group>"; };
+		D9883B931FD025B5001F84F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9883BAD1FD0298E001F84F9 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		D9883BAE1FD0299A001F84F9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D9883BAF1FD029A4001F84F9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D9883BB11FD029B7001F84F9 /* PopupControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PopupControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9883BB21FD02A08001F84F9 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		D9883BB61FD02DF6001F84F9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D9883BB71FD02E02001F84F9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D9883BB81FD02E0A001F84F9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D9883BB91FD02E29001F84F9 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		D9883C0D1FD03355001F84F9 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		D9883C0E1FD03414001F84F9 /* HotelBL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelBL.swift; sourceTree = "<group>"; };
+		D9883C101FD03AE6001F84F9 /* DispatchQueueExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueueExtension.swift; sourceTree = "<group>"; };
+		D9D877001FD7F6BA0078096E /* RoomBL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomBL.swift; sourceTree = "<group>"; };
+		D9D877021FD7FD200078096E /* BLHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLHelp.swift; sourceTree = "<group>"; };
+		D9D877041FD814E20078096E /* CitiesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesTableViewController.swift; sourceTree = "<group>"; };
+		D9D877081FD816730078096E /* cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cities.plist; sourceTree = "<group>"; };
+		D9D8770A1FD825710078096E /* KeyViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyViewViewController.swift; sourceTree = "<group>"; };
+		D9D8770C1FD82BD60078096E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F69F409D25748DBAD461AFCF /* Pods_JiaGeXian4iPhone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JiaGeXian4iPhone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D9883B6B1FD025B5001F84F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D93DFF4B1FE2CC5B00E48903 /* PopupControl.framework in Frameworks */,
+				D9883BBA1FD02E29001F84F9 /* libz.tbd in Frameworks */,
+				C85CBA92F086721A13BDC6B4 /* Pods_JiaGeXian4iPhone.framework in Frameworks */,
+				D93DFF4C1FE2CD7800E48903 /* PopupControl.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9883B7F1FD025B5001F84F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9883B8A1FD025B5001F84F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		80596EE8FBADA4F375CF28FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C334A0829C6E7E3AD570FF28 /* Pods-JiaGeXian4iPhone.debug.xcconfig */,
+				51B2D6B3F6F803BA6AF6467B /* Pods-JiaGeXian4iPhone.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D97F43AB1FD905AB007F019E /* TBXML */ = {
+			isa = PBXGroup;
+			children = (
+				D97F43AC1FD905AB007F019E /* TBXML-Code */,
+				D97F43B01FD905AB007F019E /* TBXML-Headers */,
+			);
+			path = TBXML;
+			sourceTree = "<group>";
+		};
+		D97F43AC1FD905AB007F019E /* TBXML-Code */ = {
+			isa = PBXGroup;
+			children = (
+				D97F43AD1FD905AB007F019E /* TBXML+Compression.m */,
+				D97F43AE1FD905AB007F019E /* TBXML+HTTP.m */,
+				D97F43AF1FD905AB007F019E /* TBXML.m */,
+			);
+			path = "TBXML-Code";
+			sourceTree = "<group>";
+		};
+		D97F43B01FD905AB007F019E /* TBXML-Headers */ = {
+			isa = PBXGroup;
+			children = (
+				D97F43B11FD905AB007F019E /* TBXML+Compression.h */,
+				D97F43B21FD905AB007F019E /* TBXML+HTTP.h */,
+				D97F43B31FD905AB007F019E /* TBXML.h */,
+			);
+			path = "TBXML-Headers";
+			sourceTree = "<group>";
+		};
+		D9883B651FD025B5001F84F9 = {
+			isa = PBXGroup;
+			children = (
+				D97F43BC1FD93554007F019E /* myIndex.html */,
+				D97F43A91FD8EC37007F019E /* Podfile */,
+				D9883B701FD025B5001F84F9 /* JiaGeXian4iPhone */,
+				D9883B851FD025B5001F84F9 /* JiaGeXian4iPhoneTests */,
+				D9883B901FD025B5001F84F9 /* JiaGeXian4iPhoneUITests */,
+				D9883B6F1FD025B5001F84F9 /* Products */,
+				D9883BA11FD02611001F84F9 /* Frameworks */,
+				80596EE8FBADA4F375CF28FD /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		D9883B6F1FD025B5001F84F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9883B6E1FD025B5001F84F9 /* JiaGeXian4iPhone.app */,
+				D9883B821FD025B5001F84F9 /* JiaGeXian4iPhoneTests.xctest */,
+				D9883B8D1FD025B5001F84F9 /* JiaGeXian4iPhoneUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9883B701FD025B5001F84F9 /* JiaGeXian4iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				D97F43AB1FD905AB007F019E /* TBXML */,
+				D9D877081FD816730078096E /* cities.plist */,
+				D9883BA41FD026BB001F84F9 /* BusinessLogicLayer */,
+				D9883B711FD025B5001F84F9 /* AppDelegate.swift */,
+				D9883B751FD025B5001F84F9 /* Main.storyboard */,
+				D9883B781FD025B5001F84F9 /* Assets.xcassets */,
+				D9883B7A1FD025B5001F84F9 /* LaunchScreen.storyboard */,
+				D9883B7D1FD025B5001F84F9 /* Info.plist */,
+				D9883BB21FD02A08001F84F9 /* PrefixHeader.pch */,
+				D9883C101FD03AE6001F84F9 /* DispatchQueueExtension.swift */,
+				D9D877041FD814E20078096E /* CitiesTableViewController.swift */,
+				D9D8770A1FD825710078096E /* KeyViewViewController.swift */,
+				D9D8770C1FD82BD60078096E /* ViewController.swift */,
+				D97F43B71FD9067C007F019E /* Bridging-Header.h */,
+				D97F43B81FD91270007F019E /* HotelListViewController.swift */,
+				D97F43BA1FD93044007F019E /* HotelTableViewCell.swift */,
+				D97F43C01FD94869007F019E /* RoomTableViewCell.swift */,
+				D97F43C21FD9488F007F019E /* RoomListViewController.swift */,
+			);
+			path = JiaGeXian4iPhone;
+			sourceTree = "<group>";
+		};
+		D9883B851FD025B5001F84F9 /* JiaGeXian4iPhoneTests */ = {
+			isa = PBXGroup;
+			children = (
+				D9883B861FD025B5001F84F9 /* JiaGeXian4iPhoneTests.swift */,
+				D9883B881FD025B5001F84F9 /* Info.plist */,
+			);
+			path = JiaGeXian4iPhoneTests;
+			sourceTree = "<group>";
+		};
+		D9883B901FD025B5001F84F9 /* JiaGeXian4iPhoneUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D9883B911FD025B5001F84F9 /* JiaGeXian4iPhoneUITests.swift */,
+				D9883B931FD025B5001F84F9 /* Info.plist */,
+			);
+			path = JiaGeXian4iPhoneUITests;
+			sourceTree = "<group>";
+		};
+		D9883BA11FD02611001F84F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9883C0D1FD03355001F84F9 /* ImageIO.framework */,
+				D9883BB91FD02E29001F84F9 /* libz.tbd */,
+				D9883BB81FD02E0A001F84F9 /* CoreGraphics.framework */,
+				D9883BB71FD02E02001F84F9 /* UIKit.framework */,
+				D9883BB61FD02DF6001F84F9 /* Foundation.framework */,
+				D9883BB11FD029B7001F84F9 /* PopupControl.framework */,
+				D9883BAF1FD029A4001F84F9 /* Security.framework */,
+				D9883BAE1FD0299A001F84F9 /* SystemConfiguration.framework */,
+				D9883BAD1FD0298E001F84F9 /* CFNetwork.framework */,
+				F69F409D25748DBAD461AFCF /* Pods_JiaGeXian4iPhone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9883BA41FD026BB001F84F9 /* BusinessLogicLayer */ = {
+			isa = PBXGroup;
+			children = (
+				D9D877001FD7F6BA0078096E /* RoomBL.swift */,
+				D9883C0E1FD03414001F84F9 /* HotelBL.swift */,
+				D9D877021FD7FD200078096E /* BLHelp.swift */,
+			);
+			path = BusinessLogicLayer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D9883B6D1FD025B5001F84F9 /* JiaGeXian4iPhone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9883B961FD025B5001F84F9 /* Build configuration list for PBXNativeTarget "JiaGeXian4iPhone" */;
+			buildPhases = (
+				B5A9BCA1CCDF5A8865709137 /* [CP] Check Pods Manifest.lock */,
+				D9883B6A1FD025B5001F84F9 /* Sources */,
+				D9883B6B1FD025B5001F84F9 /* Frameworks */,
+				D9883B6C1FD025B5001F84F9 /* Resources */,
+				AE748C09016FEB5F2587FEA8 /* [CP] Embed Pods Frameworks */,
+				02E909D3BC426A0D82FDA10B /* [CP] Copy Pods Resources */,
+				D93DFF4E1FE2CD7800E48903 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JiaGeXian4iPhone;
+			productName = JiaGeXian4iPhone;
+			productReference = D9883B6E1FD025B5001F84F9 /* JiaGeXian4iPhone.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D9883B811FD025B5001F84F9 /* JiaGeXian4iPhoneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9883B991FD025B5001F84F9 /* Build configuration list for PBXNativeTarget "JiaGeXian4iPhoneTests" */;
+			buildPhases = (
+				D9883B7E1FD025B5001F84F9 /* Sources */,
+				D9883B7F1FD025B5001F84F9 /* Frameworks */,
+				D9883B801FD025B5001F84F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9883B841FD025B5001F84F9 /* PBXTargetDependency */,
+			);
+			name = JiaGeXian4iPhoneTests;
+			productName = JiaGeXian4iPhoneTests;
+			productReference = D9883B821FD025B5001F84F9 /* JiaGeXian4iPhoneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D9883B8C1FD025B5001F84F9 /* JiaGeXian4iPhoneUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9883B9C1FD025B5001F84F9 /* Build configuration list for PBXNativeTarget "JiaGeXian4iPhoneUITests" */;
+			buildPhases = (
+				D9883B891FD025B5001F84F9 /* Sources */,
+				D9883B8A1FD025B5001F84F9 /* Frameworks */,
+				D9883B8B1FD025B5001F84F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9883B8F1FD025B5001F84F9 /* PBXTargetDependency */,
+			);
+			name = JiaGeXian4iPhoneUITests;
+			productName = JiaGeXian4iPhoneUITests;
+			productReference = D9883B8D1FD025B5001F84F9 /* JiaGeXian4iPhoneUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D9883B661FD025B5001F84F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = lxm;
+				TargetAttributes = {
+					D9883B6D1FD025B5001F84F9 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					D9883B811FD025B5001F84F9 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D9883B6D1FD025B5001F84F9;
+					};
+					D9883B8C1FD025B5001F84F9 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D9883B6D1FD025B5001F84F9;
+					};
+				};
+			};
+			buildConfigurationList = D9883B691FD025B5001F84F9 /* Build configuration list for PBXProject "JiaGeXian4iPhone" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D9883B651FD025B5001F84F9;
+			productRefGroup = D9883B6F1FD025B5001F84F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D9883B6D1FD025B5001F84F9 /* JiaGeXian4iPhone */,
+				D9883B811FD025B5001F84F9 /* JiaGeXian4iPhoneTests */,
+				D9883B8C1FD025B5001F84F9 /* JiaGeXian4iPhoneUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D9883B6C1FD025B5001F84F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D97F43AA1FD8EC37007F019E /* Podfile in Resources */,
+				D9883B7C1FD025B5001F84F9 /* LaunchScreen.storyboard in Resources */,
+				D9883B791FD025B5001F84F9 /* Assets.xcassets in Resources */,
+				D97F43BD1FD93554007F019E /* myIndex.html in Resources */,
+				D9883B771FD025B5001F84F9 /* Main.storyboard in Resources */,
+				D9D877091FD816730078096E /* cities.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9883B801FD025B5001F84F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9883B8B1FD025B5001F84F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02E909D3BC426A0D82FDA10B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JiaGeXian4iPhone/Pods-JiaGeXian4iPhone-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE748C09016FEB5F2587FEA8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JiaGeXian4iPhone/Pods-JiaGeXian4iPhone-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JiaGeXian4iPhone/Pods-JiaGeXian4iPhone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5A9BCA1CCDF5A8865709137 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JiaGeXian4iPhone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D9883B6A1FD025B5001F84F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D97F43B61FD905AB007F019E /* TBXML.m in Sources */,
+				D9D8770D1FD82BD60078096E /* ViewController.swift in Sources */,
+				D9D877031FD7FD200078096E /* BLHelp.swift in Sources */,
+				D97F43B91FD91270007F019E /* HotelListViewController.swift in Sources */,
+				D9D8770B1FD825710078096E /* KeyViewViewController.swift in Sources */,
+				D97F43B51FD905AB007F019E /* TBXML+HTTP.m in Sources */,
+				D97F43C31FD9488F007F019E /* RoomListViewController.swift in Sources */,
+				D97F43BB1FD93044007F019E /* HotelTableViewCell.swift in Sources */,
+				D9D877061FD814E20078096E /* CitiesTableViewController.swift in Sources */,
+				D97F43B41FD905AB007F019E /* TBXML+Compression.m in Sources */,
+				D9D877011FD7F6BA0078096E /* RoomBL.swift in Sources */,
+				D97F43C11FD94869007F019E /* RoomTableViewCell.swift in Sources */,
+				D9883C0F1FD03414001F84F9 /* HotelBL.swift in Sources */,
+				D9883B721FD025B5001F84F9 /* AppDelegate.swift in Sources */,
+				D9883C111FD03AE6001F84F9 /* DispatchQueueExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9883B7E1FD025B5001F84F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9883B871FD025B5001F84F9 /* JiaGeXian4iPhoneTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9883B891FD025B5001F84F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9883B921FD025B5001F84F9 /* JiaGeXian4iPhoneUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D9883B841FD025B5001F84F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9883B6D1FD025B5001F84F9 /* JiaGeXian4iPhone */;
+			targetProxy = D9883B831FD025B5001F84F9 /* PBXContainerItemProxy */;
+		};
+		D9883B8F1FD025B5001F84F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9883B6D1FD025B5001F84F9 /* JiaGeXian4iPhone */;
+			targetProxy = D9883B8E1FD025B5001F84F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D9883B751FD025B5001F84F9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9883B761FD025B5001F84F9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D9883B7A1FD025B5001F84F9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9883B7B1FD025B5001F84F9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D9883B941FD025B5001F84F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D9883B951FD025B5001F84F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D9883B971FD025B5001F84F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C334A0829C6E7E3AD570FF28 /* Pods-JiaGeXian4iPhone.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JY454XBRDK;
+				GCC_PREFIX_HEADER = /Users/lxm/Desktop/study/jiagexian/JiaGeXian4iPhone/JiaGeXian4iPhone/PrefixHeader.pch;
+				INFOPLIST_FILE = JiaGeXian4iPhone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lxm.JiaGeXian4iPhone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/lxm/Desktop/study/jiagexian/JiaGeXian4iPhone/JiaGeXian4iPhone/Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D9883B981FD025B5001F84F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51B2D6B3F6F803BA6AF6467B /* Pods-JiaGeXian4iPhone.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JY454XBRDK;
+				GCC_PREFIX_HEADER = /Users/lxm/Desktop/study/jiagexian/JiaGeXian4iPhone/JiaGeXian4iPhone/PrefixHeader.pch;
+				INFOPLIST_FILE = JiaGeXian4iPhone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lxm.JiaGeXian4iPhone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/lxm/Desktop/study/jiagexian/JiaGeXian4iPhone/JiaGeXian4iPhone/Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D9883B9A1FD025B5001F84F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JY454XBRDK;
+				INFOPLIST_FILE = JiaGeXian4iPhoneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lxm.JiaGeXian4iPhoneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JiaGeXian4iPhone.app/JiaGeXian4iPhone";
+			};
+			name = Debug;
+		};
+		D9883B9B1FD025B5001F84F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JY454XBRDK;
+				INFOPLIST_FILE = JiaGeXian4iPhoneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lxm.JiaGeXian4iPhoneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JiaGeXian4iPhone.app/JiaGeXian4iPhone";
+			};
+			name = Release;
+		};
+		D9883B9D1FD025B5001F84F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JY454XBRDK;
+				INFOPLIST_FILE = JiaGeXian4iPhoneUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lxm.JiaGeXian4iPhoneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JiaGeXian4iPhone;
+			};
+			name = Debug;
+		};
+		D9883B9E1FD025B5001F84F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JY454XBRDK;
+				INFOPLIST_FILE = JiaGeXian4iPhoneUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lxm.JiaGeXian4iPhoneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JiaGeXian4iPhone;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D9883B691FD025B5001F84F9 /* Build configuration list for PBXProject "JiaGeXian4iPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9883B941FD025B5001F84F9 /* Debug */,
+				D9883B951FD025B5001F84F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9883B961FD025B5001F84F9 /* Build configuration list for PBXNativeTarget "JiaGeXian4iPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9883B971FD025B5001F84F9 /* Debug */,
+				D9883B981FD025B5001F84F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9883B991FD025B5001F84F9 /* Build configuration list for PBXNativeTarget "JiaGeXian4iPhoneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9883B9A1FD025B5001F84F9 /* Debug */,
+				D9883B9B1FD025B5001F84F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9883B9C1FD025B5001F84F9 /* Build configuration list for PBXNativeTarget "JiaGeXian4iPhoneUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9883B9D1FD025B5001F84F9 /* Debug */,
+				D9883B9E1FD025B5001F84F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D9883B661FD025B5001F84F9 /* Project object */;
+}

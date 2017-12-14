@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyPickerViewController" customModule="PopupControl" customModuleProvider="target">
+            <connections>
+                <outlet property="picker" destination="Tzy-Jl-WNt" id="NiT-Xy-Owm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="206"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tzy-Jl-WNt">
+                    <rect key="frame" x="0.0" y="44" width="375" height="162"/>
+                </pickerView>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M9p-b8-kOQ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                </navigationBar>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R0A-8z-HLY">
+                    <rect key="frame" x="20" y="7" width="48" height="30"/>
+                    <state key="normal" title="Cancel"/>
+                    <connections>
+                        <action selector="cancel:" destination="-1" eventType="touchUpInside" id="Vou-az-FT4"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBn-gV-JQg">
+                    <rect key="frame" x="318" y="7" width="37" height="30"/>
+                    <state key="normal" title="Done"/>
+                    <connections>
+                        <action selector="done:" destination="-1" eventType="touchUpInside" id="tS8-29-vZk"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Tzy-Jl-WNt" firstAttribute="top" secondItem="R0A-8z-HLY" secondAttribute="bottom" constant="7" id="1Kb-d2-UC6"/>
+                <constraint firstItem="Tzy-Jl-WNt" firstAttribute="top" secondItem="M9p-b8-kOQ" secondAttribute="bottom" id="9jF-sU-bCu"/>
+                <constraint firstItem="Tzy-Jl-WNt" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="BEz-ma-mVq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="OBn-gV-JQg" secondAttribute="trailing" constant="20" id="OJc-8u-076"/>
+                <constraint firstItem="Tzy-Jl-WNt" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ZOy-Nf-xF8"/>
+                <constraint firstItem="OBn-gV-JQg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="7" id="bRb-w5-7i1"/>
+                <constraint firstItem="M9p-b8-kOQ" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="duh-7V-qUr"/>
+                <constraint firstItem="Tzy-Jl-WNt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="fxw-om-bzs"/>
+                <constraint firstItem="M9p-b8-kOQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="kzA-Tc-edp"/>
+                <constraint firstItem="R0A-8z-HLY" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="7" id="q8w-u2-skR"/>
+                <constraint firstItem="M9p-b8-kOQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="uz2-AK-UDG"/>
+                <constraint firstItem="R0A-8z-HLY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="wVa-VD-K7r"/>
+                <constraint firstItem="Tzy-Jl-WNt" firstAttribute="top" secondItem="OBn-gV-JQg" secondAttribute="bottom" constant="7" id="yOw-wr-AkL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="34.5" y="-176"/>
+        </view>
+    </objects>
+</document>
